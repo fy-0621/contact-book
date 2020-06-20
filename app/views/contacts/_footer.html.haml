@@ -1,0 +1,65 @@
+.contact-form
+  .date
+    .date-month
+      %select{:date => "month"}
+        %option{:value => "0"} 1
+        %option{:value => "1"} 2
+        %option{:value => "2"} 3
+        %option{:value => "3"} 4
+        %option{:value => "4"} 5
+        %option{:value => "5"} 6
+        %option{:value => "6"} 7
+        %option{:value => "7"} 8
+        %option{:value => "8"} 9
+        %option{:value => "9"} 10
+        %option{:value => "10"} 11
+        %option{:value => "11"} 12
+      月
+    .date-day
+      %select{:date => "day"}
+        %option{:value => "0"} 1
+        %option{:value => "1"} 2
+        %option{:value => "2"} 3
+        %option{:value => "3"} 4
+        %option{:value => "4"} 5
+        %option{:value => "5"} 6
+        %option{:value => "6"} 7
+        %option{:value => "7"} 8
+        %option{:value => "8"} 9
+        %option{:value => "9"} 10
+        %option{:value => "10"} 11
+        %option{:value => "11"} 12
+        %option{:value => "12"} 13
+        %option{:value => "13"} 14
+        %option{:value => "14"} 15
+        %option{:value => "15"} 16
+        %option{:value => "16"} 17
+        %option{:value => "17"} 18
+        %option{:value => "18"} 19
+        %option{:value => "19"} 20
+        %option{:value => "20"} 21
+        %option{:value => "21"} 22
+        %option{:value => "22"} 23
+        %option{:value => "23"} 24
+        %option{:value => "24"} 25
+        %option{:value => "25"} 26
+        %option{:value => "26"} 27
+        %option{:value => "27"} 28
+        %option{:value => "28"} 29
+        %option{:value => "29"} 30
+        %option{:value => "30"} 31
+      日
+  .shift-work
+    %select{:shift => "color"}
+      %option{:value => "0"} １
+      %option{:value => "1"} ２
+      %option{:value => "2"} ３
+    直
+  .shift-work__color
+    %select{:shift => "color"}
+      %option{:value => "0"} 白
+      %option{:value => "1"} 黒
+      %option{:value => "2"} 黄
+    直
+  -# .send-btn
+  %input{type: "submit",class: "send-btn", value:"Send"}

@@ -1,0 +1,26 @@
+.search{
+  height: 75px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid black;
+
+    &__box{
+      padding-right: 40px;
+    
+      .input-box{
+        height: 50px;
+        width: 500px;
+        font-size: 20px;
+      }
+    }
+
+    .search-btn{
+      height: 40px;
+      width: 80px;
+      font-weight: bold;
+      background-color: #38aef0;
+      border: 2px solid black;
+    }
+}
