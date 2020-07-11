@@ -1,0 +1,15 @@
+@import "reset";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "contacts/index";
+@import "contacts/header";
+@import "contacts/add-to";
+@import "contacts/processes";
+@import "contacts/search";
+@import "contacts/contacts";
+@import "contacts/footer";
+@import "contacts/user";
+
+* {
+  box-sizing: border-box;
+}

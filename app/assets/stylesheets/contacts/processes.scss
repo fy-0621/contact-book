@@ -1,0 +1,11 @@
+.processes{
+  height: calc(100vh - 240px);
+  background-color: yellow;
+  padding-top: 15px;
+  border-right: 2px solid black;
+    .process{
+      font-size: 27px;
+      font-weight: bold;
+      padding: 10px 0px 10px 10px;
+    }
+}

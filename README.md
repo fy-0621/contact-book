@@ -27,29 +27,29 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_code|integer|null: false|
+|employee_code|integer|null: false|
 |name|string|null: false, index: true|
 ### Association
 - has_many :comments
-- belongs_to :process
-<!-- - has_many :contacts, through: :contacts_employees
-## usersテーブルからcontacts_employeesテーブルを経由してgroupsテーブルに繋ぐアソシエーション -->
+- has_many :process
+- has_many :process, through: :users_processes
 
 ## processesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|process_name|string|null: false|
 |user_id|references|null: false, foreign_key: true|
 |contact_id|string|null: false, foreign_key: true|
 ### Association
 - has_many :contacts
 - has_many :users
+- has_many :user, through: :users_processes
 
 ## contactsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|processes_id|references|null: false, foreign_key: true|
-|name|string|null: false|
+|process_id|references|null: false, foreign_key: true|
+|date|date|null: false|
 ### Association
 - belongs_to :plocess
 - has_many :comments
@@ -68,13 +68,12 @@ Things you may want to cover:
 ## imagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|references|null: false, foreign_key: true|
-|contact_id|references|null: false, foreign_key: true|
+|comment_id|references|null: false, foreign_key: true|
 ### Association
-- has_many :comments
+- belongs_to :comments
 
 
-## employee従業員 チャットスペースのユーザー
+
 ## string 文字列
 ## foreign_key外部キー
 ## references 参照

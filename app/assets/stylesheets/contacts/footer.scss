@@ -1,0 +1,33 @@
+.contact-form{
+  height: calc(100vh - 715px);
+  background-color: green;
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .date{
+    display: flex;
+    font-size: 30px;
+    padding-right: 30px;
+  }
+
+  .shift-work{
+    font-size: 30px;
+    padding-right: 30px;
+  }
+
+  .shift-work__color{
+    font-size: 30px;
+    padding-right: 30px;
+  }
+  
+
+  .send-btn{
+    height: 40px;
+    width: 80px;
+    font-weight: bold;
+    background-color: #38aef0;
+    border: 2px solid black;
+  }
+}
